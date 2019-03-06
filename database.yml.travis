@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: travis_ci_development
+  pool: 5
+  username: postgres
+  password: julien
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: julien
+  database: travis_ci_test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: travis_ci_production
+  pool: 5
+  username: postgres
+  password: julien

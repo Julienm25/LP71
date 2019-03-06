@@ -1,5 +1,17 @@
-before_script:
-  - psql -c "CREATE USER skateparks WITH PASSWORD 'skateparks';" -U postgres
 language: ruby
 rvm:
 - 2.5.3
+env:
+  - DB=pgsql
+
+services:
+  - postgresql
+
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rake
+
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database LP72_test;' -U postgres

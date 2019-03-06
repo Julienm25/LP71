@@ -1,0 +1,14 @@
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/nio4r-2.3.1/ext/nio4r
+C:/Ruby25-x64/bin/ruby.exe -r ./siteconf20190306-232-hlum6i.rb extconf.rb
+
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/nio4r-2.3.1/ext/nio4r
+make "DESTDIR=" clean
+make: *** Aucune règle pour fabriquer la cible « clean ». Arrêt.
+
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/nio4r-2.3.1/ext/nio4r
+make "DESTDIR="
+make: rien à faire pour « all ».
+
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/nio4r-2.3.1/ext/nio4r
+make "DESTDIR=" install
+make: rien à faire pour « install ».

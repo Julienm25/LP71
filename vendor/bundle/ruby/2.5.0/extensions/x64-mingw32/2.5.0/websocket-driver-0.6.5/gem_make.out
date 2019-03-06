@@ -1,0 +1,19 @@
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+C:/Ruby25-x64/bin/ruby.exe -r ./siteconf20190306-232-1g5i021.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+bash.exe: warning: could not find /tmp, please create!
+
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+generating websocket_mask-x64-mingw32.def
+bash.exe: warning: could not find /tmp, please create!
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: C:/Users/julie/Documents/GITHUB/LP71/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+bash.exe: warning: could not find /tmp, please create!
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20190306-232-1kcghhn

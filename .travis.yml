@@ -1,5 +1,5 @@
-script:
-  - "bundle exec rake neo4j:install['community-2.2.0-M02'] neo4j:start default --trace"
+before_script:
+  - psql -c "CREATE USER skateparks WITH PASSWORD 'skateparks';" -U postgres
 language: ruby
 rvm:
 - 2.5.3

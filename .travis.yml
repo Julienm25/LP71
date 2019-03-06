@@ -5,6 +5,7 @@ deploy:
   provider: heroku
   api_key: 870d83ec-d812-4d4d-a1ec-d5f0f361defb
   app: lp71-julien
+  skip_cleanup: true
 env:
   - DB=pgsql
 

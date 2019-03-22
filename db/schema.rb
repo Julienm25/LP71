@@ -10,10 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190309102207) do
+ActiveRecord::Schema.define(version: 20190322094612) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "oderlines", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_oderlines_on_order_id", using: :btree
+    t.index ["product_id"], name: "index_oderlines_on_product_id", using: :btree
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string   "name"
+    t.string   "adress"
+    t.string   "town"
+    t.string   "zipcode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.float    "price"
+    t.string   "picture"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "produits", force: :cascade do |t|
     t.string   "Nom"
@@ -31,4 +58,6 @@ ActiveRecord::Schema.define(version: 20190309102207) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "oderlines", "orders"
+  add_foreign_key "oderlines", "products"
 end
